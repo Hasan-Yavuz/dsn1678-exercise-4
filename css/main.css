@@ -48,7 +48,7 @@ section {
 
 .shuttle {
     width: 200px;
-    opacity: 0;
+    opacity: 0
 }
 
 .shuttle-section {
@@ -56,7 +56,7 @@ section {
 }
 
 .js-shuttle-fade {
-    -webkit-animation: shuttle-fade 1s linear forwards;
+    -webkit-animation: shuttle-fade 0.75s ease-in-out forwards;
 }
 
 @-webkit-keyframes shuttle-fade {
@@ -69,4 +69,36 @@ section {
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+.ship-section {
+    background-color: #fea529;
+    background: transparent url("../img/kasei-valles-canyons.jpg") no-repeat center top;
+    text-align: center;
+}
+
+.ship {
+    width: 150px;
+    opacity: 0;
+    display: inline-block;
+}
+
+.js-ship-fade {
+    -webkit-animation: ship-fade 0.75s ease-in-out forwards;
+}
+
+@-webkit-keyframes ship-fade {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.js-ship-fade-2 {
+    -webkit-animation: ship-fade 0.7s linear forwards;
 }
