@@ -62,7 +62,7 @@ section {
 @-webkit-keyframes shuttle-fade {
     0% {
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(200px);
     }
     
     100% {
@@ -84,13 +84,13 @@ section {
 }
 
 .js-ship-fade {
-    -webkit-animation: ship-fade 0.75s ease-in-out forwards;
+    -webkit-animation: ship-fade 0.8s ease-in-out forwards;
 }
 
 @-webkit-keyframes ship-fade {
     0% {
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(200px);
     }
     
     100% {
@@ -100,5 +100,5 @@ section {
 }
 
 .js-ship-fade-2 {
-    -webkit-animation: ship-fade 0.7s linear forwards;
+    -webkit-animation: ship-fade 1s ease-in-out forwards;
 }
