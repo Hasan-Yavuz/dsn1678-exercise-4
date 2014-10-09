@@ -47,24 +47,26 @@ section {
 }
 
 .shuttle {
-    width: 300px;
+    width: 200px;
     opacity: 0;
 }
 
-.js-shuttle-fade {
-    /* Don't forget to put in all the prefixes!!!!! */
-    -webkit-animation: dipper-fade 1s linear forwards;
-    /* animation-fill-mode*/
+.shuttle-section {
+    background-color: #fea529;
 }
 
-/* Don't forget to put in all the prefixes!!!!! */
+.js-shuttle-fade {
+    -webkit-animation: shuttle-fade 1s linear forwards;
+}
 
 @-webkit-keyframes shuttle-fade {
     0% {
         opacity: 0;
+        transform: translateY(100px);
     }
     
     100% {
-   opacity: 1;
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
